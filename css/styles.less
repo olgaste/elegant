@@ -1,0 +1,154 @@
+/*Configs*/
+@text_color: #222222;
+@active_color: #fff;
+@font_headers: 'Raleway', sans-serif;
+@font_text: 'Lato', sans-serif;
+
+
+
+/*Base*/
+
+h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-family: @font_headers;
+	padding-bottom: 20px;
+}
+
+p{
+	font-family: @font_text;
+}
+
+hr{
+	width: 70px;
+	padding-bottom: 20px;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.container {
+	padding: 3% 6% 3% 6%;
+	text-align: center;
+}
+
+
+/*Layot*/
+.header-bg{
+	a.logo{
+	float: left;
+	}
+	ul.nav{
+		float: right;
+		color: @active_color;
+	}
+}
+
+.header-bg{
+	height: 100vh;
+	width: 100%;
+	background: url("../images/header.jpg");
+	background-size: cover;
+	position: relative;
+}
+
+.header-controls{
+	width: 600px;
+	height: 300px;
+	color: @active_color;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+
+	p{
+		text-align: center;
+	}
+
+}
+.check{
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		top: 400px;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		margin: auto;
+}
+
+.main{
+	background: url("../images/main.jpg");
+	width: 100%;
+	height: 100vh;
+	background-size: cover;;
+	position: relative;
+}
+
+.services, .work{
+	hr{
+		border-color: @text_color;
+		padding-bottom: 30px;
+	}
+}
+
+.our-work{
+	img{
+		width: 100%;
+	}
+
+.social-media{
+	img{
+		margin: 20px;
+	}
+}
+}
+
+footer{
+	background: url("../images/main.jpg");
+	width: 100%;
+	height: 100vh;
+	background-size: cover;;
+	position: relative;
+	color: @active_color;
+
+}
+
+
+
+/*Modules*/
+
+.sub-main{
+	width: 100%;
+	padding-top: 135px;
+
+	h1, p, a{
+		color: @active_color;
+		text-align: justify;
+	}
+
+	.down{
+		padding: 100px 150px 0 0; 
+	}
+	.more{
+		color: @active_color;
+		text-align: justify;
+		padding-top: 40px;
+	}
+}
+
+.button{
+		border: 1 px solid @text_color;
+		
+		color: @text_color;
+		text-transform: uppercase;
+		width: 40%;
+		padding: 2% 0 2% 0;
+		margin: 0 auto 5%;
+	}
+
+	
